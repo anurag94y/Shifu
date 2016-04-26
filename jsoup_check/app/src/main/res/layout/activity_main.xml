@@ -1,0 +1,62 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtData"
+        android:src="@drawable/scrooge"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productName"
+        android:hint="Product Name"
+        android:layout_below="@+id/txtData"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/shape1"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scrooge It"
+        android:hint="Search"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/productName"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendmessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:onClick="showHistory"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favourite"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:onClick="showFavourites"/>
+
+
+</RelativeLayout>
